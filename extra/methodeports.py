@@ -15,7 +15,7 @@ mserv["pub2"]=68
 mserv["pub3"]=72
 
 for e in menv.keys():
-	for m in ['1','2','3','4']:
+	for m in ['1','2','3','4','5']:
 		for s in mserv.keys():
 			portnr=`menv[e]`+m+"1"+`mserv[s]`
 			portname="meth0"+m+"-"+e+"-"+"tomcat"+"-"+s
