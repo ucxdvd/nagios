@@ -1,0 +1,39 @@
+define servicegroup{
+	servicegroup_name	Tomcats
+	alias			tomcat
+}
+define command {
+	name check_tomcat_main_dev
+	command_name check_tomcat_main-dev
+	#command_line check_http -H $HOSTADDRESS$ -u /manager/html -a admin:admin -p 34131
+        command_line "/usr/lib/nagios/plugins/check_http -H meth04dev-idx-cor -p 34131 -a admin:admin -u /manager/html"
+}
+
+define service {
+	use generic-service
+	host_name meth04dev-idx-cor
+	service_description Tomcat-main
+	check_command check_tomcat_main-dev
+	servicegroups	Tomcats
+}
+define service {
+	use generic-service
+	host_name meth04uat-idx-cor
+	service_description Tomcat-main
+	check_command check_http!"-u /manager/html -a admin:admin -p 44131"
+	servicegroups	Tomcats
+}
+define service {
+	use generic-service
+	host_name meth04dev-idx-cor
+	service_description Tomcat-inout
+	check_command check_http!"-u /manager/html -a admin:admin -p 34139"
+	servicegroups	Tomcats
+}
+define service {
+	use generic-service
+	host_name meth04-idx-cor
+	service_description Tomcat-web
+	check_command check_http!"-u /manager/html -a admin:admin -p 54143"
+	servicegroups	Tomcats
+}

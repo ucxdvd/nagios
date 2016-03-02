@@ -1,0 +1,27 @@
+nmap2nagios-ng v0.1.3
+==================
+
+DESCRIPTION
+===========
+nmap2nagios-ng is a script for generating Nagios host, hostgroup and services configuration files from Nmap XML output.
+You can choose if configuration files for Nagios 2.x or Nagios 3.x will be created. 
+
+There is embedded POD documentation in nmap2nagios-ng.pl, just type perldoc nmap2nagios-ng.pl
+
+This software is tested with Nmap 4.53!!
+
+COPYRIGHT
+=========
+
+Copyright (c) 2001-2002 Todd A. Green.
+Copyright (c) 2008-2009 Michel Sigloch
+All rights reserved.  This program is free software; 
+you can redistribute it and/or modify it under the same terms as
+Perl itself.
+
+Todd A. Green <slartibartfast@awardsforfjords.com>
+Michel Sigloch <mail@michel-sigloch.de>
+
+NAGIOS
+======
+Nagios is a registered trademark of Ethan Galstad.

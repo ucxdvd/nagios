@@ -1,0 +1,72 @@
+Revision History for nmap2nagios.pl
+
+0.01	03/01/2000 - TAG
+	- Original Version
+0.02	03/14/2000 - TAG
+	- Minor bug fixes, added support for more plugins 
+	  and added POD (Plain Old Documentation)
+0.03	05/22/2000 - TAG
+	- Updated to handle 2.5x output (Thanks Yuriy!)
+0.04	07/27/2000 - TAG 
+	- Added -c contact_groups option to override 
+	  default of 'unixadmins' (Thanks Allen!)
+0.05	09/30/2000 - TAG
+	- Added -p option to add ping scan mode to 
+	  allow for conversion of nmap -sP output
+0.06p1	11/02/2000 - TAG
+	- Woo! Lots of changes.  Now generates a Netsaint 
+	  v0.0.6 output (includes volatile value in service entry)
+	  Includes nmap's OS Guess as comment above host 
+	  entry to aid in future identification
+	  Auto-assigns hosts to hostgroups based on matching 
+	  nmap's OS Guess.  
+	  Generates a service entry for every detected port 
+	  instead of just known services (Thanks SPC Foreman)
+	  Insures unique service entries when nmap outputs 
+	  name service name for multiple ports on a host
+	  by appending port number to subsequent entries.
+0.06p2	02/20/2001 - TAG
+	- Weeee! Total rewrite! Ok let's see what did I just do?
+	- Removed parsing of nmap's standard output in favor of
+	  the XML log.  Must easier to work with!
+	- Removed all hard-coded configuration settings and moved 
+	  to XML-based configuration file.
+	- Made hostgroup matches dynamic so any host field (name, 
+	  address, osmatch, etc) can be used to add a host to a group.
+	- Moved all the output formatting to the configuration 
+	  file to allow for much more flexiability.
+
+0.1.0	Jul 02 10:55:00 2002 - tagreen
+	- Renamed to nmap2nagios.pl.
+	- s/netsaint/nagios/g on nmap2nagios.pl
+	- Cleaned up code formatting
+	- Modified XML configuration to support nagios output.
+
+0.1.1	Oct 09 13:54:00 2002 - tagreen
+	- Added fix for when there is only one host in the NMAP XML file.
+          Thanks to Michael Boman for pointing it out.
+
+0.1.2	Nov 14 09:23:00 2002 - tagreen
+	- Added -i option to ignore unknown services
+	- Added <disabled>true</disabled> to service descriptions to disable known services.
+	- Thanks to Adam Rolli for the suggestion.
+	- Added template variable for nmap2nagios arguments
+	- Modified default configuration files to include nmap2nagios arguments in generated configuration file.
+	- Included sample NMAP XML output and nmap2nagios generated configuration files.
+	
+0.1.3a	Jan 18 15:30:00 2008 - msigloch
+	- Added feature for working with host and service templates
+	- Changed old sourcecode to make it work with new versions of Nmap
+	- Better identification of OS-classes scanned by Nmap
+	- Re-design of the nmap2nagios.conf to make it more compliant with the 2.x versions of Nagios
+	- Added nmap2nagios_3x.conf to generate config-files for Nagios 3.x
+	- Added -z and -d options to choose for which Nagios version the config should be generated
+	- Renamed to nmap2nagios-ng.pl
+
+0.1.3	Feb 12 02:40:00 2008 - msigloch
+	- Some minor code-changes
+	- Tested and set version to stable; ip-range-scan works fine
+
+0.1.3	May 11 07:15:00 2009 - msigloch
+	- Fixed contact group issue within the template 
+	- Some minor code-changes
