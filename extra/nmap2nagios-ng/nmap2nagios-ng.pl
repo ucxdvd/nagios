@@ -142,6 +142,8 @@ sub process_results {
     $host_ref->{'address'} = $nmap_host_ref->{'address'}->[0]->{'addr'};
     }
     $host_ref->{'host_name'} = $nmap_host_ref->{'hostnames'}->{'hostname'}->{'name'};
+    print "$nmap_host_ref->{'hostnames'}->{'hostname'}->{'name'}";
+
     if ( ref($nmap_host_ref->{'os'}->{'osclass'}) eq 'HASH' )
 		{
 			$host_ref->{'osclass'} = $nmap_host_ref->{'os'}->{'osclass'}->{'osfamily'};
@@ -154,7 +156,6 @@ sub process_results {
 		{
 			print "DEBUG1: ".ref($nmap_host_ref->{'os'}->{'osclass'})."\n";
 		}
-	
     if (!$host_ref->{'host_name'}) {
       $host_ref->{'host_name'} = $host_ref->{'address'};
       $host_ref->{'host_name'} =~ s/\./-/g;

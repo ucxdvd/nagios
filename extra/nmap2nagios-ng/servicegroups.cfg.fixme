@@ -1,0 +1,29 @@
+define servicegroup {
+        servicegroup_name METH01
+        alias EDA
+	members meth01-dev-tomcat-inout-tcp-31139,meth01-dev-tomcat-main-tcp-31131,meth01-dev-tomcat-mms-tcp-31160,meth01-dev-tomcat-output-tcp-31147,meth01-dev-tomcat-pub-tcp-31164,meth01-dev-tomcat-tools-tcp-31156,meth01-dev-tomcat-web-tcp-31143,meth01-prd-tomcat-inout-tcp-51139,meth01-prd-tomcat-main-tcp-51131,meth01-prd-tomcat-mms-tcp-51160,meth01-prd-tomcat-output-tcp-51147,meth01-prd-tomcat-pub-tcp-51164,meth01-prd-tomcat-tools-tcp-51156,meth01-prd-tomcat-web-tcp-51143,meth01-uat-tomcat-inout-tcp-41139,meth01-uat-tomcat-main-tcp-41131,meth01-uat-tomcat-mms-tcp-41160,meth01-uat-tomcat-output-tcp-41147,meth01-uat-tomcat-pub-tcp-41164,meth01-uat-tomcat-tools-tcp-41156,meth01-uat-tomcat-web-tcp-41143
+}
+define servicegroup {
+        servicegroup_name METH02
+        alias Archive
+	members meth02-dev-tomcat-inout-tcp-32139,meth02-dev-tomcat-main-tcp-32131,meth02-dev-tomcat-output-tcp-32147,meth02-dev-tomcat-pub-tcp-32164,meth02-prd-tomcat-inout-tcp-52139,meth02-prd-tomcat-main-tcp-52131,meth02-prd-tomcat-web-tcp-52143,meth02-uat-tomcat-inout-tcp-42139,meth02-uat-tomcat-main-tcp-42131
+}
+
+define servicegroup {
+        servicegroup_name METH03
+        alias Wires
+	members meth03-dev-tomcat-inout-tcp-33139,meth03-dev-tomcat-main-tcp-33131,meth03-dev-tomcat-web-tcp-33143,meth03-prd-tomcat-inout-tcp-53139,meth03-prd-tomcat-main-tcp-53131,meth03-prd-tomcat-web-tcp-53143,meth03-uat-tomcat-inout-tcp-43139,meth03-uat-tomcat-main-tcp-43131,meth03-uat-tomcat-web-tcp-43143
+}
+
+define servicegroup {
+        servicegroup_name METH04
+        alias DSNB
+	members meth04-dev-tomcat-inout-tcp-34139,meth04-dev-tomcat-main-tcp-34131,meth04-dev-tomcat-mms-tcp-34160,meth04-dev-tomcat-output-tcp-34147,meth04-dev-tomcat-plan-tcp-34135,meth04-dev-tomcat-pub-tcp-34164,meth04-dev-tomcat-pub2-tcp-34168,meth04-dev-tomcat-pub3-tcp-34172,meth04-dev-tomcat-tools-tcp-34156,meth04-dev-tomcat-web-tcp-34143,meth04-prd-tomcat-inout-tcp-54139,meth04-prd-tomcat-main-tcp-54131,meth04-prd-tomcat-mms-tcp-54160,meth04-prd-tomcat-output-tcp-54147,meth04-prd-tomcat-plan-tcp-54135,meth04-prd-tomcat-pub-tcp-54164,meth04-prd-tomcat-pub2-tcp-54168,meth04-prd-tomcat-pub3-tcp-54172,meth04-prd-tomcat-tools-tcp-54156,meth04-prd-tomcat-web-tcp-54143,meth04-uat-tomcat-inout-tcp-44139,meth04-uat-tomcat-main-tcp-44131,meth04-uat-tomcat-output-tcp-44147,meth04-uat-tomcat-plan-tcp-44135,meth04-uat-tomcat-pub-tcp-44164,meth04-uat-tomcat-pub2-tcp-44168,meth04-uat-tomcat-pub3-tcp-44172,meth04-uat-tomcat-tools-tcp-44156,meth04-uat-tomcat-web-tcp-44143
+}
+
+define servicegroup {
+        servicegroup_name MGL
+        alias NL
+	members meth05-dev-tomcat-inout-tcp-35139,meth05-dev-tomcat-main-tcp-35131,meth05-dev-tomcat-mms-tcp-35160,meth05-dev-tomcat-output-tcp-35147,meth05-dev-tomcat-plan-tcp-35135,meth05-dev-tomcat-pub-tcp-35164,meth05-dev-tomcat-pub2-tcp-35168,meth05-dev-tomcat-pub3-tcp-35172,meth05-dev-tomcat-tools-tcp-35156,meth05-dev-tomcat-web-tcp-35143,meth05-uat-tomcat-inout-tcp-45139,meth05-uat-tomcat-main-tcp-45131,meth05-uat-tomcat-output-tcp-45147,meth05-uat-tomcat-plan-tcp-45135,meth05-uat-tomcat-pub-tcp-45164,meth05-uat-tomcat-pub2-tcp-45168,meth05-uat-tomcat-pub3-tcp-45172,meth05-uat-tomcat-tools-tcp-45156,meth05-uat-tomcat-web-tcp-45143
+}
+

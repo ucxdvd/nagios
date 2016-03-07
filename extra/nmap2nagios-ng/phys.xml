@@ -10,6 +10,7 @@
 <address addr="172.23.12.241" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofdevd01.core.local" type="user"/>
+<hostname name="grbnofdevd01.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65511">
 <extrareasons reason="resets" count="65511"/>
@@ -85,6 +86,7 @@
 <address addr="172.23.12.242" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofdevd02.core.local" type="user"/>
+<hostname name="grbnofdevd02.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65486">
 <extrareasons reason="resets" count="65486"/>
@@ -185,6 +187,7 @@
 <address addr="172.23.12.243" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofdevd03.core.local" type="user"/>
+<hostname name="grbnofdevd03.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65451">
 <extrareasons reason="resets" count="65451"/>
@@ -320,6 +323,7 @@
 <address addr="172.23.12.244" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofdevd04.core.local" type="user"/>
+<hostname name="grbnofdevd04.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65485">
 <extrareasons reason="resets" count="65485"/>
@@ -421,6 +425,7 @@
 <address addr="172.30.78.26" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofdevd05.core.local" type="user"/>
+<hostname name="grbnofdevd05.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65506">
 <extrareasons reason="resets" count="65506"/>
@@ -501,6 +506,7 @@
 <address addr="172.30.78.27" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofdevd06.core.local" type="user"/>
+<hostname name="grbnofdevd06.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65477">
 <extrareasons reason="resets" count="65477"/>
@@ -610,6 +616,7 @@
 <address addr="172.23.17.51" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofuata01.core.local" type="user"/>
+<hostname name="grbnofuata01.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65481">
 <extrareasons reason="resets" count="65481"/>
@@ -715,6 +722,7 @@
 <address addr="172.23.17.52" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofuata02.core.local" type="user"/>
+<hostname name="grbnofuata02.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65488">
 <extrareasons reason="resets" count="65488"/>
@@ -813,6 +821,7 @@
 <address addr="172.23.17.53" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofuata03.core.local" type="user"/>
+<hostname name="grbnofuata03.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65453">
 <extrareasons reason="resets" count="65453"/>
@@ -946,6 +955,7 @@
 <address addr="172.23.17.54" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofuata04.core.local" type="user"/>
+<hostname name="grbnofuata04.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65483">
 <extrareasons reason="resets" count="65483"/>
@@ -1049,6 +1059,7 @@
 <address addr="172.30.76.41" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofuata05.core.local" type="user"/>
+<hostname name="grbnofuata05.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65504">
 <extrareasons reason="resets" count="65504"/>
@@ -1131,6 +1142,7 @@
 <address addr="172.30.76.42" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofuata06.core.local" type="user"/>
+<hostname name="grbnofuata06.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65476">
 <extrareasons reason="resets" count="65476"/>
@@ -1241,6 +1253,7 @@
 <address addr="172.23.17.138" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofnodp05.core.local" type="user"/>
+<hostname name="grbnofnodp05.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65481">
 <extrareasons reason="resets" count="65481"/>
@@ -1346,6 +1359,7 @@
 <address addr="172.23.17.140" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofnodp06.core.local" type="user"/>
+<hostname name="grbnofnodp06.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65493">
 <extrareasons reason="resets" count="65493"/>
@@ -1439,6 +1453,7 @@
 <address addr="172.23.17.117" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofnodp07.core.local" type="user"/>
+<hostname name="grbnofnodp07.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65487">
 <extrareasons reason="resets" count="65487"/>
@@ -1538,6 +1553,7 @@
 <address addr="172.23.17.118" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofnodp08.core.local" type="user"/>
+<hostname name="grbnofnodp08.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65469">
 <extrareasons reason="resets" count="65469"/>
@@ -1655,6 +1671,7 @@
 <address addr="172.23.17.119" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofnodp09.core.local" type="user"/>
+<hostname name="grbnofnodp09.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65494">
 <extrareasons reason="resets" count="65494"/>
@@ -1747,6 +1764,7 @@
 <address addr="172.23.17.120" addrtype="ipv4"/>
 <hostnames>
 <hostname name="grbnofnodp10.core.local" type="user"/>
+<hostname name="grbnofnodp10.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65505">
 <extrareasons reason="resets" count="65505"/>
