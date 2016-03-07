@@ -1,0 +1,2 @@
+# must remove the additonal hostname lines, eg, like so:
+grep -v 'type="PTR"' < phys.xml > methode.xml
