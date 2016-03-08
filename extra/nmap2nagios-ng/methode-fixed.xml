@@ -10,7 +10,6 @@
 <address addr="172.23.12.245" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth01dev-db-cor" type="user"/>
-<hostname name="meth01dev-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65501">
 <extrareasons reason="resets" count="65501"/>
@@ -96,7 +95,6 @@
 <address addr="172.23.12.246" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth01dev-idx-cor" type="user"/>
-<hostname name="meth01dev-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65483">
 <extrareasons reason="resets" count="65483"/>
@@ -200,7 +198,6 @@
 <address addr="172.23.17.55" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth01uat-db-cor" type="user"/>
-<hostname name="meth01uat-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65471">
 <extrareasons reason="resets" count="65471"/>
@@ -316,7 +313,6 @@
 <address addr="172.23.17.56" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth01uat-idx-cor" type="user"/>
-<hostname name="meth01uat-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65485">
 <extrareasons reason="resets" count="65485"/>
@@ -418,7 +414,6 @@
 <address addr="172.23.17.242" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth01-db-cor" type="user"/>
-<hostname name="meth01-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65471">
 <extrareasons reason="resets" count="65471"/>
@@ -534,7 +529,6 @@
 <address addr="172.23.17.243" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth01-idx-cor" type="user"/>
-<hostname name="meth01-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65477">
 <extrareasons reason="resets" count="65477"/>
@@ -644,7 +638,6 @@
 <address addr="172.23.12.247" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth02dev-db-cor" type="user"/>
-<hostname name="meth02dev-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65474">
 <extrareasons reason="resets" count="65474"/>
@@ -757,7 +750,6 @@
 <address addr="172.23.12.248" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth02dev-idx-cor" type="user"/>
-<hostname name="meth02dev-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65510">
 <extrareasons reason="resets" count="65510"/>
@@ -834,7 +826,6 @@
 <address addr="172.23.17.57" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth02uat-db-cor" type="user"/>
-<hostname name="meth02uat-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65476">
 <extrareasons reason="resets" count="65476"/>
@@ -945,7 +936,6 @@
 <address addr="172.23.17.58" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth02uat-idx-cor" type="user"/>
-<hostname name="meth02uat-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65480">
 <extrareasons reason="resets" count="65480"/>
@@ -1052,7 +1042,6 @@
 <address addr="172.23.17.244" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth02-db-cor" type="user"/>
-<hostname name="meth02-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65454">
 <extrareasons reason="resets" count="65454"/>
@@ -1185,7 +1174,6 @@
 <address addr="172.23.17.245" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth02-idx-cor" type="user"/>
-<hostname name="meth02-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65468">
 <extrareasons reason="resets" count="65468"/>
@@ -1304,7 +1292,6 @@
 <address addr="172.23.12.249" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth03dev-db-cor" type="user"/>
-<hostname name="meth03dev-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65438">
 <extrareasons reason="resets" count="65438"/>
@@ -1453,7 +1440,6 @@
 <address addr="172.23.12.250" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth03dev-idx-cor" type="user"/>
-<hostname name="meth03dev-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65485">
 <extrareasons reason="resets" count="65485"/>
@@ -1555,7 +1541,6 @@
 <address addr="172.23.17.59" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth03uat-db-cor" type="user"/>
-<hostname name="meth03uat-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65440">
 <extrareasons reason="resets" count="65440"/>
@@ -1702,7 +1687,6 @@
 <address addr="172.23.17.60" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth03uat-idx-cor" type="user"/>
-<hostname name="meth03uat-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65483">
 <extrareasons reason="resets" count="65483"/>
@@ -1806,7 +1790,6 @@
 <address addr="172.23.17.246" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth03-db-cor" type="user"/>
-<hostname name="meth03-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65492">
 <extrareasons reason="resets" count="65492"/>
@@ -1901,7 +1884,6 @@
 <address addr="172.23.17.247" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth03-idx-cor" type="user"/>
-<hostname name="meth03-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65492">
 <extrareasons reason="resets" count="65492"/>
@@ -1996,7 +1978,6 @@
 <address addr="172.23.12.251" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth04dev-db-cor" type="user"/>
-<hostname name="meth04dev-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65472">
 <extrareasons reason="resets" count="65472"/>
@@ -2111,7 +2092,6 @@
 <address addr="172.23.12.252" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth04dev-idx-cor" type="user"/>
-<hostname name="meth04dev-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65447">
 <extrareasons reason="resets" count="65447"/>
@@ -2251,7 +2231,6 @@
 <address addr="172.23.17.61" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth04uat-db-cor" type="user"/>
-<hostname name="meth04uat-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65470">
 <extrareasons reason="resets" count="65470"/>
@@ -2368,7 +2347,6 @@
 <address addr="172.23.17.62" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth04uat-idx-cor" type="user"/>
-<hostname name="meth04uat-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65449">
 <extrareasons reason="resets" count="65449"/>
@@ -2506,7 +2484,6 @@
 <address addr="172.23.17.254" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth04-db-cor" type="user"/>
-<hostname name="meth04-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65481">
 <extrareasons reason="resets" count="65481"/>
@@ -2612,7 +2589,6 @@
 <address addr="172.23.17.255" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth04-idx-cor" type="user"/>
-<hostname name="meth04-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65483">
 <extrareasons reason="resets" count="65483"/>
@@ -2716,7 +2692,6 @@
 <address addr="172.30.78.28" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth05dev-db-cor" type="user"/>
-<hostname name="meth05dev-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65492">
 <extrareasons reason="resets" count="65492"/>
@@ -2811,7 +2786,6 @@
 <address addr="172.30.78.29" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth05dev-idx-cor" type="user"/>
-<hostname name="meth05dev-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65473">
 <extrareasons reason="resets" count="65473"/>
@@ -2925,7 +2899,6 @@
 <address addr="172.30.76.43" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth05uat-db-cor" type="user"/>
-<hostname name="meth05uat-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65490">
 <extrareasons reason="resets" count="65490"/>
@@ -3022,7 +2995,6 @@
 <address addr="172.30.76.44" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth05uat-idx-cor" type="user"/>
-<hostname name="meth05uat-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65473">
 <extrareasons reason="resets" count="65473"/>
@@ -3136,7 +3108,6 @@
 <address addr="172.23.17.252" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth05-db-cor" type="user"/>
-<hostname name="meth05-db-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65481">
 <extrareasons reason="resets" count="65481"/>
@@ -3242,7 +3213,6 @@
 <address addr="172.23.17.253" addrtype="ipv4"/>
 <hostnames>
 <hostname name="meth05-idx-cor" type="user"/>
-<hostname name="meth05-idx-cor.core.local" type="PTR"/>
 </hostnames>
 <ports><extraports state="closed" count="65481">
 <extrareasons reason="resets" count="65481"/>

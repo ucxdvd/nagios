@@ -1,0 +1,4 @@
+define command{
+	command_name	check_host_cluster
+	command_line	/usr/local/nagios/libexec/check_cluster --host -l $ARG1$ -w $ARG2$ -c $ARG3$ -d $ARG4$ 
+	}

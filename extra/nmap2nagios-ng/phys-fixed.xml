@@ -1,0 +1,1829 @@
+<?xml version="1.0"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.47 scan initiated Mon Mar  7 17:06:57 2016 as: nmap -p1-65535 -sS -O -oX phys.xml grbnofdevd01.core.local grbnofdevd02.core.local grbnofdevd03.core.local grbnofdevd04.core.local grbnofdevd05.core.local grbnofdevd06.core.local grbnofuata01.core.local grbnofuata02.core.local grbnofuata03.core.local grbnofuata04.core.local grbnofuata05.core.local grbnofuata06.core.local grbnofnodp05.core.local grbnofnodp06.core.local grbnofnodp07.core.local grbnofnodp08.core.local grbnofnodp09.core.local grbnofnodp10.core.local -->
+<nmaprun scanner="nmap" args="nmap -p1-65535 -sS -O -oX phys.xml grbnofdevd01.core.local grbnofdevd02.core.local grbnofdevd03.core.local grbnofdevd04.core.local grbnofdevd05.core.local grbnofdevd06.core.local grbnofuata01.core.local grbnofuata02.core.local grbnofuata03.core.local grbnofuata04.core.local grbnofuata05.core.local grbnofuata06.core.local grbnofnodp05.core.local grbnofnodp06.core.local grbnofnodp07.core.local grbnofnodp08.core.local grbnofnodp09.core.local grbnofnodp10.core.local" start="1457370417" startstr="Mon Mar  7 17:06:57 2016" version="6.47" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1457370417" endtime="1457370460"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.23.12.241" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofdevd01.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65511">
+<extrareasons reason="resets" count="65511"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="952"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1270"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3111"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ajp13" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8759"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="9981"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="9983"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="12570"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="18802"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20625"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="23074"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="28547"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31014"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31015"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31016"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31017"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31018"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31019"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="32131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth02-dev-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="32139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth02-dev-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="37082"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="94" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.18" accuracy="94" line="49454">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=37082%PV=Y%DS=3%DC=I%G=Y%TM=56DDB55D&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=10E%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="2549445" lastboot="Sun Feb  7 04:56:56 2016"/>
+<distance value="3"/>
+<tcpsequence index="261" difficulty="Good luck!" values="1D288552,38B5895D,83C9488A,F1EFA1E,59EAB428,D791C373"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="97F564EA,97F5654E,97F565B3,97F56617,97F5667B,97F566DF"/>
+<times srtt="577" rttvar="82" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370460"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.23.12.242" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofdevd02.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65486">
+<extrareasons reason="resets" count="65486"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="888"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="accessbuilder" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1270"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1459"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="proshare1" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2889"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rsom" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3211"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="avsecuremgmt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="16561"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20000"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="dnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20001"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="microsan" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20222"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ipulse-ics" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25099"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="26804"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="26849"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="27344"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31041"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31042"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31043"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31044"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31045"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31046"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31047"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31048"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31049"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31050"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31051"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31052"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-dev-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="31139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-dev-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="31143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-dev-tomcat-web" method="table" conf="3"/></port>
+<port protocol="tcp" portid="31147"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-dev-tomcat-output" method="table" conf="3"/></port>
+<port protocol="tcp" portid="31151"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31156"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-dev-tomcat-tools" method="table" conf="3"/></port>
+<port protocol="tcp" portid="31160"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-dev-tomcat-mms" method="table" conf="3"/></port>
+<port protocol="tcp" portid="31164"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-dev-tomcat-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="32011"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="32012"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="32013"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="32014"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="32015"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="32016"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="32017"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="32018"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="32019"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="32131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth02-dev-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="32147"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth02-dev-tomcat-output" method="table" conf="3"/></port>
+<port protocol="tcp" portid="32164"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth02-dev-tomcat-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="40113"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="94" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.18" accuracy="94" line="49454">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=40113%PV=Y%DS=3%DC=I%G=Y%TM=56DDB55D&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=108%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="2549410" lastboot="Sun Feb  7 04:57:31 2016"/>
+<distance value="3"/>
+<tcpsequence index="261" difficulty="Good luck!" values="7B141AB2,AFBD3129,C4D93401,9BB14C2B,B0521B40,3B10544D"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="97F4DC37,97F4DC9B,97F4DCFF,97F4DD63,97F4DDC8,97F4DE2C"/>
+<times srtt="691" rttvar="275" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370460"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.23.12.243" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofdevd03.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65451">
+<extrareasons reason="resets" count="65451"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="887"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="iclcnet_svinfo" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1270"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2783"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="3311"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="mcns-tel-ret" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3560"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5316"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="7479"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="8179"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="9207"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="wap-vcal-s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9834"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="10777"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="12593"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="12621"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="12958"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="13394"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="13894"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="15801"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="16649"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="16995"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="19114"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="19834"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20824"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="21369"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="22591"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="23394"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="26089"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="26642"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="27233"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="28073"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="28589"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="28884"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="29333"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="29824"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33015"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33016"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33017"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="33019"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33020"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33021"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34041"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34042"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34043"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34044"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34045"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34046"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34047"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34048"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34049"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34050"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34051"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34052"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34053"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34054"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34055"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34060"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34061"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-dev-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="34135"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-dev-tomcat-plan" method="table" conf="3"/></port>
+<port protocol="tcp" portid="34139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-dev-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="34143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-dev-tomcat-web" method="table" conf="3"/></port>
+<port protocol="tcp" portid="34147"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-dev-tomcat-output" method="table" conf="3"/></port>
+<port protocol="tcp" portid="34151"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34156"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-dev-tomcat-tools" method="table" conf="3"/></port>
+<port protocol="tcp" portid="34160"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-dev-tomcat-mms" method="table" conf="3"/></port>
+<port protocol="tcp" portid="34162"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34164"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-dev-tomcat-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="34168"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-dev-tomcat-pub2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="34172"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-dev-tomcat-pub3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="34176"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35135"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-plan" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-web" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35147"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-output" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35156"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-tools" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35160"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-mms" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35164"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35168"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-pub2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35172"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-pub3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35176"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="32137"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="95" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Kamikaze 7.09 (Linux 2.6.22)" accuracy="95" line="50778">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=32137%PV=Y%DS=3%DC=I%G=Y%TM=56DDB55D&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10F%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="2549414" lastboot="Sun Feb  7 04:57:27 2016"/>
+<distance value="3"/>
+<tcpsequence index="260" difficulty="Good luck!" values="BA935CE6,304DBA37,5C5071A6,EC1EE3AA,A68B4B15,2B246BE2"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="97F4EC1A,97F4EC7E,97F4ECE2,97F4ED48,97F4EDAB,97F4EE0F"/>
+<times srtt="924" rttvar="455" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370460"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.23.12.244" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofdevd04.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65485">
+<extrareasons reason="resets" count="65485"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="833"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="netconfsoapbeep" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1900"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="upnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3026"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="3411"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="3512"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="3548"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="4148"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5609"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="6439"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="8815"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="13479"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20000"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="dnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20002"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="commtact-http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20004"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20006"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20553"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="23613"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33041"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33042"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33043"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33044"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33045"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33046"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33047"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33048"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33049"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33050"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33051"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33052"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33053"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33054"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33055"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33060"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33061"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="33131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth03-dev-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="33139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth03-dev-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="33143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth03-dev-tomcat-web" method="table" conf="3"/></port>
+<port protocol="tcp" portid="34014"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34015"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34016"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34017"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34018"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34019"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34020"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34021"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="34405"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="30537"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="95" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Kamikaze 7.09 (Linux 2.6.22)" accuracy="95" line="50778">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=30537%PV=Y%DS=3%DC=I%G=Y%TM=56DDB55D&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=101%GCD=1%ISR=102%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="2549402" lastboot="Sun Feb  7 04:57:39 2016"/>
+<distance value="3"/>
+<tcpsequence index="257" difficulty="Good luck!" values="57A17839,333A666B,7CDBA331,8D837B77,894CADD3,79299DC5"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="97F4BBC9,97F4BC2D,97F4BC91,97F4BCF5,97F4BD59,97F4BDBD"/>
+<times srtt="668" rttvar="351" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370555"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.30.78.26" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofdevd05.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65506">
+<extrareasons reason="resets" count="65506"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="843"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1986"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="licensedaemon" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2340"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="wrs_registry" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3511"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="webmail-2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6179"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="7585"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="9298"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="12576"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="12712"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="13318"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20000"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="dnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20002"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="commtact-http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20004"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20006"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="23783"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="28086"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35014"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35015"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35016"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35017"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35018"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35019"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35020"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35021"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35405"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="32339"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="95" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Kamikaze 7.09 (Linux 2.6.22)" accuracy="95" line="50778">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=32339%PV=Y%DS=3%DC=I%G=Y%TM=56DDB5BF&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=102%GCD=1%ISR=108%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="2433169" lastboot="Mon Feb  8 13:16:30 2016"/>
+<distance value="3"/>
+<tcpsequence index="258" difficulty="Good luck!" values="E83D271F,B9C929A3,96CF3A43,3DF8B3A9,F5C5A799,E9D0F180"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="91071043,910710A7,9107110C,9107116C,910711D5,91071239"/>
+<times srtt="763" rttvar="313" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370555"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.30.78.27" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofdevd06.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65477">
+<extrareasons reason="resets" count="65477"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="885"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1270"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssserver" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3511"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="webmail-2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3672"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="lispworks-orb" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4014"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="4397"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5896"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="6017"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="xmail-ctrl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7306"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="7766"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="8198"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="8242"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="8733"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="16337"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="18062"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="18892"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="21439"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="21852"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="25772"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="27788"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34060"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34061"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35041"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35042"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35043"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35044"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35045"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35046"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35047"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35048"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35049"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35050"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35051"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35052"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35053"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35054"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35055"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35135"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-plan" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-web" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35147"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-output" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35151"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35156"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-tools" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35164"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35168"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-dev-tomcat-pub2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35180"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35181"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35182"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35183"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35184"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35186"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35188"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35189"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="35022"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="95" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Kamikaze 7.09 (Linux 2.6.22)" accuracy="95" line="50778">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=35022%PV=Y%DS=3%DC=I%G=Y%TM=56DDB5BF&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=103%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="2433163" lastboot="Mon Feb  8 13:16:36 2016"/>
+<distance value="3"/>
+<tcpsequence index="259" difficulty="Good luck!" values="597B0F23,F550352B,BBC82DF8,5212D076,2C5ABE12,4C123A2A"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="9106F92C,9106F991,9106F9F5,9106FA59,9106FABD,9106FB21"/>
+<times srtt="843" rttvar="662" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370555"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.23.17.51" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofuata01.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65481">
+<extrareasons reason="resets" count="65481"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="383"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="hp-alarm-mgr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="668"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="mecomm" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4065"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="avanti_cdp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="xgrid" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5227"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="7980"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ajp13" method="table" conf="3"/></port>
+<port protocol="tcp" portid="10522"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="12734"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="18868"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="22331"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="24378"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="27872"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41014"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41015"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41016"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41017"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41018"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41019"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42004"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42005"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42041"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42042"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42043"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42044"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42045"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42046"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42047"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42048"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42049"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42050"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42051"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42052"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42053"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42054"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42055"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42056"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42057"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42058"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42059"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42060"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42061"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42062"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42063"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42064"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42065"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42066"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42067"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth02-uat-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="42139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth02-uat-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="30297"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="95" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Kamikaze 7.09 (Linux 2.6.22)" accuracy="95" line="50778">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=30297%PV=Y%DS=3%DC=I%G=Y%TM=56DDB5BF&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=103%GCD=2%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="610789" lastboot="Mon Feb 29 15:29:30 2016"/>
+<distance value="3"/>
+<tcpsequence index="259" difficulty="Good luck!" values="E61F1692,201DA8D3,F6BFEC7B,1199E04F,A93A8751,88C2B6F"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="2467C05B,2467C0BF,2467C124,2467C188,2467C1EC,2467C250"/>
+<times srtt="1010" rttvar="906" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370555"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.23.17.52" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofuata02.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65488">
+<extrareasons reason="resets" count="65488"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="383"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="hp-alarm-mgr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="604"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="tunnel" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2301"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="compaqdiag" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3937"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="dvbservdsc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4211"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5227"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="6524"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="6683"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="8386"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20457"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="25441"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="28387"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41004"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41005"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41041"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41042"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41043"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41044"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41045"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41046"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41047"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41048"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41049"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41050"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41051"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41052"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-uat-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="41139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-uat-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="41143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-uat-tomcat-web" method="table" conf="3"/></port>
+<port protocol="tcp" portid="41147"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-uat-tomcat-output" method="table" conf="3"/></port>
+<port protocol="tcp" portid="41151"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41156"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-uat-tomcat-tools" method="table" conf="3"/></port>
+<port protocol="tcp" portid="41160"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-uat-tomcat-mms" method="table" conf="3"/></port>
+<port protocol="tcp" portid="41164"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-uat-tomcat-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="42010"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42011"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42012"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42014"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42015"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42016"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42018"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42019"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="42020"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="42325"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="95" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Kamikaze 7.09 (Linux 2.6.22)" accuracy="95" line="50778">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=42325%PV=Y%DS=3%DC=I%G=Y%TM=56DDB5BF&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=FF%GCD=2%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS(O&#xa;OS:1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11N&#xa;OS:W9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(R&#xa;OS:=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%&#xa;OS:RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y&#xa;OS:%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R&#xa;OS:%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RU&#xa;OS:CK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="617293" lastboot="Mon Feb 29 13:41:06 2016"/>
+<distance value="3"/>
+<tcpsequence index="255" difficulty="Good luck!" values="73DB330F,196AA0CB,3D5BA88D,5CE70D7,37D8BF79,91A059D2"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="24CAFE70,24CAFED5,24CAFF3A,24CAFF9E,24CB0003,24CB0066"/>
+<times srtt="1205" rttvar="996" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370555"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.23.17.53" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofuata03.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65453">
+<extrareasons reason="resets" count="65453"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="383"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="hp-alarm-mgr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="972"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1222"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="nerv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3007"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="lotusmtap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3479"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="twrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4311"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5227"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5285"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="7392"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ajp13" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8293"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="hiperscan-id" method="table" conf="3"/></port>
+<port protocol="tcp" portid="11215"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="15999"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="16068"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="16253"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="17133"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="17230"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="17572"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="17952"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="18158"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="19512"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="19876"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20385"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20451"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="21500"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="21640"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="23045"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="23428"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="23941"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="24714"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="25660"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="29585"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="29876"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43014"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43015"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43016"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43017"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43018"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="43019"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44004"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="44005"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44041"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44042"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44043"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44044"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44045"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44046"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44047"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44048"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44049"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44050"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44051"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44052"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44053"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44054"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44055"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-uat-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="44135"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-uat-tomcat-plan" method="table" conf="3"/></port>
+<port protocol="tcp" portid="44139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-uat-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="44143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-uat-tomcat-web" method="table" conf="3"/></port>
+<port protocol="tcp" portid="44147"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-uat-tomcat-output" method="table" conf="3"/></port>
+<port protocol="tcp" portid="44151"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44156"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-uat-tomcat-tools" method="table" conf="3"/></port>
+<port protocol="tcp" portid="44164"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-uat-tomcat-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="44168"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-uat-tomcat-pub2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="44172"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-uat-tomcat-pub3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="44176"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45135"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-plan" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-web" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45147"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-output" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45156"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-tools" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45164"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45168"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-pub2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45172"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-pub3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45176"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="32863"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="94" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.18" accuracy="94" line="49454">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=32863%PV=Y%DS=3%DC=I%G=Y%TM=56DDB5BF&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=107%GCD=1%ISR=10E%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="2549464" lastboot="Sun Feb  7 04:58:15 2016"/>
+<distance value="3"/>
+<tcpsequence index="263" difficulty="Good luck!" values="FEF06194,75B6156A,2803DF1A,B91DA28A,3ED7D2A3,4B4357FA"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="97F59714,97F59778,97F597DB,97F59841,97F598A5,97F5990A"/>
+<times srtt="1044" rttvar="878" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370555"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.23.17.54" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofuata04.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65483">
+<extrareasons reason="resets" count="65483"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="383"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="hp-alarm-mgr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="958"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1752"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="lofr-lm" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1900"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="upnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4085"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="4411"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5227"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="7885"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="11838"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="12753"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="13173"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20000"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="dnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20002"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="commtact-http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20004"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20006"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20454"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="21315"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="24658"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="25230"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43004"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43005"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43041"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43042"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43043"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43044"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43045"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43046"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43047"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43048"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43049"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43050"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43051"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43052"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43053"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43054"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43055"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth03-uat-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="43139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth03-uat-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="43143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth03-uat-tomcat-web" method="table" conf="3"/></port>
+<port protocol="tcp" portid="44014"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44015"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44016"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44017"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44018"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44019"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44020"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44021"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="44405"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="39492"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="95" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Kamikaze 7.09 (Linux 2.6.22)" accuracy="95" line="50778">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=39492%PV=Y%DS=3%DC=I%G=Y%TM=56DDB5BF&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=103%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="2549439" lastboot="Sun Feb  7 04:58:40 2016"/>
+<distance value="3"/>
+<tcpsequence index="259" difficulty="Good luck!" values="D3403DEF,F17DD59E,1F97921B,7F9746FA,C0E7FFC1,56F877AF"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="97F535F8,97F5365C,97F536C0,97F53725,97F5378A,97F537EE"/>
+<times srtt="885" rttvar="827" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370555"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.30.76.41" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofuata05.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65504">
+<extrareasons reason="resets" count="65504"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="383"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="hp-alarm-mgr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="922"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3407"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="3511"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="webmail-2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5227"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5396"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="11485"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="12470"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="14002"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="14052"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20000"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="dnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20002"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="commtact-http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20004"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20006"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20325"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="22477"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="24548"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="25275"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35014"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35015"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35016"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35017"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35018"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35019"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35020"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35021"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35405"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="31495"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="95" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Kamikaze 7.09 (Linux 2.6.22)" accuracy="95" line="50778">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=31495%PV=Y%DS=3%DC=I%G=Y%TM=56DDB5BF&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=102%GCD=1%ISR=10C%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="2432908" lastboot="Mon Feb  8 13:20:51 2016"/>
+<distance value="3"/>
+<tcpsequence index="258" difficulty="Good luck!" values="22C515A9,F0924958,B41DBED1,6EF79274,2B8E36EC,AD6B14C3"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="9103153F,910315A4,91031608,9103166C,910316D1,91031735"/>
+<times srtt="766" rttvar="446" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370555"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.30.76.42" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofuata06.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65476">
+<extrareasons reason="resets" count="65476"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="383"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="hp-alarm-mgr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="972"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3715"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="4024"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="tnp1-port" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4080"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="lorica-in" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4311"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5227"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="12318"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="16159"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="16981"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="18036"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="18881"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="19212"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="19441"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20455"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20528"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="23412"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="24463"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="24807"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="26649"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="27496"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34060"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34061"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35041"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35042"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35043"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35044"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35045"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35046"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35047"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35048"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35049"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35050"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="35051"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35052"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35053"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35054"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35055"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35180"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35181"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35182"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35183"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35184"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35186"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35188"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35189"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="45131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45135"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-plan" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-web" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45147"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-output" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45151"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="45156"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-tools" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45164"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="45168"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth05-uat-tomcat-pub2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="34827"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="95" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Kamikaze 7.09 (Linux 2.6.22)" accuracy="95" line="50778">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=34827%PV=Y%DS=3%DC=I%G=Y%TM=56DDB5C0&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=102%GCD=1%ISR=108%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="2432902" lastboot="Mon Feb  8 13:20:58 2016"/>
+<distance value="3"/>
+<tcpsequence index="258" difficulty="Good luck!" values="ED0772A,58DA7EDB,88E5ADFC,5C94606F,52D45374,F8AA2868"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="9102FA62,9102FAC7,9102FB2B,9102FB8F,9102FBF4,9102FC58"/>
+<times srtt="619" rttvar="100" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370555"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.23.17.138" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofnodp05.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65481">
+<extrareasons reason="resets" count="65481"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="383"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="hp-alarm-mgr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="975"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="securenetpro-sensor" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2301"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="compaqdiag" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2381"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="compaq-https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2583"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="mon" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="taep-as-svc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5211"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5227"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5311"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5411"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5555"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="freeciv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5634"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="14141"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="bo2k" method="table" conf="3"/></port>
+<port protocol="tcp" portid="14150"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="24012"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="31492"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="32619"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="34953"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35047"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35104"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="39740"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43514"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51012"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51013"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51015"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51016"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51018"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51019"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51041"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51042"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51043"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51044"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51045"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51046"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51047"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51048"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51049"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51050"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51051"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51052"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-prd-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="51139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-prd-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="51143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-prd-tomcat-web" method="table" conf="3"/></port>
+<port protocol="tcp" portid="51147"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-prd-tomcat-output" method="table" conf="3"/></port>
+<port protocol="tcp" portid="51151"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51156"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-prd-tomcat-tools" method="table" conf="3"/></port>
+<port protocol="tcp" portid="51160"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-prd-tomcat-mms" method="table" conf="3"/></port>
+<port protocol="tcp" portid="51164"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth01-prd-tomcat-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="51200"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="51201"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="37296"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="95" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Kamikaze 7.09 (Linux 2.6.22)" accuracy="95" line="50778">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=37296%PV=Y%DS=3%DC=I%G=Y%TM=56DDB5C0&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="369972" lastboot="Thu Mar  3 10:23:08 2016"/>
+<distance value="3"/>
+<tcpsequence index="260" difficulty="Good luck!" values="9F742123,5C80F345,CF2BBD09,DD4C78B3,A647FA0B,51A32617"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="160D28D2,160D2937,160D299C,160D2A00,160D2A64,160D2AC9"/>
+<times srtt="565" rttvar="390" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370555"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.23.17.140" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofnodp06.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65493">
+<extrareasons reason="resets" count="65493"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="383"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="hp-alarm-mgr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="955"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2301"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="compaqdiag" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2381"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="compaq-https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="taep-as-svc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5211"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5227"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5311"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5411"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5555"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="freeciv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5634"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="14141"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="bo2k" method="table" conf="3"/></port>
+<port protocol="tcp" portid="14150"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20000"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="dnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20002"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="commtact-http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="20008"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="20010"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="40602"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53041"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53042"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53043"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53044"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53045"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53046"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53047"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53048"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53049"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53050"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53051"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53052"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53053"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53054"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53055"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth03-prd-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth03-prd-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth03-prd-tomcat-web" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53200"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53201"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="33667"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="94" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.18" accuracy="94" line="49454">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=33667%PV=Y%DS=3%DC=I%G=Y%TM=56DDB5C0&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="3867504" lastboot="Fri Jan 22 22:50:56 2016"/>
+<distance value="3"/>
+<tcpsequence index="261" difficulty="Good luck!" values="E7483DE8,E0E4E70C,840E1FAA,34F27DBF,FCDD8FFF,92B890BA"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="E685452E,E6854594,E68545F8,E685465C,E68546C0,E6854725"/>
+<times srtt="583" rttvar="414" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370555"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.23.17.117" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofnodp07.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65487">
+<extrareasons reason="resets" count="65487"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="383"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="hp-alarm-mgr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="683"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="corba-iiop" method="table" conf="3"/></port>
+<port protocol="tcp" portid="724"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1006"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2049"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="nfs" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2301"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="compaqdiag" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2381"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="compaq-https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="taep-as-svc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5211"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5227"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5311"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5411"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5555"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="freeciv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5634"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="14141"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="bo2k" method="table" conf="3"/></port>
+<port protocol="tcp" portid="31438"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54041"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54042"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54043"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54044"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54045"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="54046"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54047"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54048"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54049"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54050"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54051"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54052"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54053"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54054"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54055"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-prd-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="54135"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-prd-tomcat-plan" method="table" conf="3"/></port>
+<port protocol="tcp" portid="54139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-prd-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="54143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-prd-tomcat-web" method="table" conf="3"/></port>
+<port protocol="tcp" portid="54147"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-prd-tomcat-output" method="table" conf="3"/></port>
+<port protocol="tcp" portid="54151"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54156"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-prd-tomcat-tools" method="table" conf="3"/></port>
+<port protocol="tcp" portid="54160"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-prd-tomcat-mms" method="table" conf="3"/></port>
+<port protocol="tcp" portid="54164"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-prd-tomcat-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="54168"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-prd-tomcat-pub2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="54172"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth04-prd-tomcat-pub3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="54200"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54201"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="37696"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="94" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.18" accuracy="94" line="49454">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=37696%PV=Y%DS=3%DC=I%G=Y%TM=56DDB5C0&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=109%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="1239525" lastboot="Mon Feb 22 08:50:35 2016"/>
+<distance value="3"/>
+<tcpsequence index="265" difficulty="Good luck!" values="9E70B78D,17425210,1691C5D1,3D63B0F,73C50F72,D406BFEC"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="49E17F4E,49E17FB4,49E18018,49E1807C,49E180E1,49E18145"/>
+<times srtt="265" rttvar="97" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370555"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.23.17.118" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofnodp08.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65469">
+<extrareasons reason="resets" count="65469"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="383"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="hp-alarm-mgr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="645"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="pssc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="705"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="agentx" method="table" conf="3"/></port>
+<port protocol="tcp" portid="787"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="qsc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2049"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="nfs" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2301"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="compaqdiag" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2381"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="compaq-https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="taep-as-svc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5211"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5227"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5311"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5411"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5555"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="freeciv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5634"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ajp13" method="table" conf="3"/></port>
+<port protocol="tcp" portid="14141"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="bo2k" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23908"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="28551"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="29346"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43474"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="45330"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="47895"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="48628"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="48836"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52014"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52015"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52016"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52018"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52019"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52020"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52041"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52042"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52043"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52044"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52045"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52046"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52047"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52048"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52049"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52050"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52051"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52052"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52053"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52054"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52055"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52056"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52057"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52058"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52059"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52060"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52061"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52062"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52063"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52064"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52065"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52066"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52067"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52131"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth02-prd-tomcat-main" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52139"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth02-prd-tomcat-inout" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52143"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="meth02-prd-tomcat-web" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52200"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52201"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="35278"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="94" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.18" accuracy="94" line="49454">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=35278%PV=Y%DS=3%DC=I%G=Y%TM=56DDB5C0&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=107%GCD=1%ISR=10C%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="2960006" lastboot="Tue Feb  2 10:55:54 2016"/>
+<distance value="3"/>
+<tcpsequence index="263" difficulty="Good luck!" values="AE595348,E4530347,B53A60B1,C70F7B9A,48D25564,D0EBE95F"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="B06DF38F,B06DF3F5,B06DF459,B06DF4BD,B06DF522,B06DF587"/>
+<times srtt="493" rttvar="387" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370555"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.23.17.119" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofnodp09.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65494">
+<extrareasons reason="resets" count="65494"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="383"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="hp-alarm-mgr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="720"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2301"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="compaqdiag" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2381"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="compaq-https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="taep-as-svc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5211"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5227"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5311"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5411"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5555"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="freeciv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5634"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="14141"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="bo2k" method="table" conf="3"/></port>
+<port protocol="tcp" portid="14144"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="21461"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="22592"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="23226"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="26130"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="28161"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="28689"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="28723"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="30273"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="30805"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="35352"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="38124"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="39471"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="43645"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="45975"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="47695"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54014"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54015"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54016"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54017"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54018"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54019"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54020"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54021"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="54405"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="39861"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="94" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.18" accuracy="94" line="49454">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=39861%PV=Y%DS=3%DC=I%G=Y%TM=56DDB5C0&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=106%GCD=1%ISR=10C%TI=Z%CI=Z%II=I%TS=A)OPS(&#xa;OS:O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11&#xa;OS:NW9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(&#xa;OS:R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS&#xa;OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=&#xa;OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=&#xa;OS:R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%R&#xa;OS:UCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="1367951" lastboot="Sat Feb 20 21:10:09 2016"/>
+<distance value="3"/>
+<tcpsequence index="262" difficulty="Good luck!" values="9930AC6E,C1C0BF08,412D08A9,AB066815,92CF5D1F,CACB2EC2"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="51891D30,51891D95,51891DF9,51891E5D,51891EC2,51891F26"/>
+<times srtt="498" rttvar="371" to="100000"/>
+</host>
+<host starttime="1457370417" endtime="1457370555"><status state="up" reason="echo-reply" reason_ttl="62"/>
+<address addr="172.23.17.120" addrtype="ipv4"/>
+<hostnames>
+<hostname name="grbnofnodp10.core.local" type="user"/>
+</hostnames>
+<ports><extraports state="closed" count="65505">
+<extrareasons reason="resets" count="65505"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="383"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="hp-alarm-mgr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="694"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="ha-cluster" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2301"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="compaqdiag" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2381"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="compaq-https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5111"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="taep-as-svc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5211"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5227"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5311"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5411"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="5555"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="freeciv" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5634"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="14141"><state state="open" reason="syn-ack" reason_ttl="62"/><service name="bo2k" method="table" conf="3"/></port>
+<port protocol="tcp" portid="26403"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="28780"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="30249"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="32434"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="36776"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="38266"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="38444"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="41230"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="52028"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53012"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53013"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53015"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53016"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53018"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+<port protocol="tcp" portid="53019"><state state="open" reason="syn-ack" reason_ttl="62"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="39150"/>
+<osmatch name="Linux 2.6.18" accuracy="96" line="40919">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="96"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Cisco UC320 PBX (Linux 2.6)" accuracy="95" line="15807">
+<osclass type="PBX" vendor="Cisco" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:cisco:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-AC66U router (Linux 2.6)" accuracy="95" line="6994">
+<osclass type="router" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N16 WAP (Linux 2.6)" accuracy="95" line="7036">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/h:asus:rt-n16</cpe><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Asus RT-N66U WAP (Linux 2.6)" accuracy="95" line="7075">
+<osclass type="WAP" vendor="Asus" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:asus:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Tomato 1.28 (Linux 2.6.22)" accuracy="95" line="50817">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="OpenWrt Kamikaze 7.09 (Linux 2.6.22)" accuracy="95" line="50778">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6.22</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.18 - 2.6.32" accuracy="94" line="41596">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.9 - 2.6.27" accuracy="94" line="49619">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.5 (SUSE Enterprise Server 9)" accuracy="94" line="48768">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.5</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=6.47%E=4%D=3/7%OT=21%CT=1%CU=39150%PV=Y%DS=3%DC=I%G=Y%TM=56DDB5C0&#xa;OS:%P=x86_64-pc-linux-gnu)SEQ(SP=F9%GCD=1%ISR=102%TI=Z%CI=Z%II=I%TS=A)OPS(O&#xa;OS:1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11N&#xa;OS:W9%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(R&#xa;OS:=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW9%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%&#xa;OS:RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y&#xa;OS:%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R&#xa;OS:%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RU&#xa;OS:CK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="1368194" lastboot="Sat Feb 20 21:06:06 2016"/>
+<distance value="3"/>
+<tcpsequence index="249" difficulty="Good luck!" values="C13E6C4A,8E030488,9BBC15A0,BE7F83DE,E4148F4B,CD66FDF5"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="518CD1CA,518CD22F,518CD293,518CD2F7,518CD35C,518CD3C1"/>
+<times srtt="478" rttvar="339" to="100000"/>
+</host>
+<runstats><finished time="1457370561" timestr="Mon Mar  7 17:09:21 2016" elapsed="144.14" summary="Nmap done at Mon Mar  7 17:09:21 2016; 18 IP addresses (18 hosts up) scanned in 144.14 seconds" exit="success"/><hosts up="18" down="0" total="18"/>
+</runstats>
+</nmaprun>
