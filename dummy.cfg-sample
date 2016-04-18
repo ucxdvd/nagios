@@ -1,0 +1,26 @@
+define command{
+	command_name	check_freedb
+	command_line	/usr/lib/nagios/plugins/check_dummy 0 "DB is zenlike happy"
+}
+
+define command{
+	command_name	check_deadlocks
+	command_line	/usr/lib/nagios/plugins/check_dummy 0 "there are no deadlocks"
+}
+
+define service{
+	use generic-service
+	name FreeDB
+	host_name meth04-db-cor
+	service_description	Free Space in DB
+	check_command	check_freedb
+	register 1
+}
+define service{
+	use generic-service
+	name DEADLOCKS
+	host_name meth04-db-cor
+	service_description	Deadlocks
+	check_command	check_deadlocks
+	register 1
+}
