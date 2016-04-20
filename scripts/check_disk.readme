@@ -1,0 +1,24 @@
+This plugin is an alternative of check_disk scripts with SSH capability. It use 'df -k' unix command to verify filesystems utilisation. You can : 
+- specify different threshold by FS 
+- use regexp to include or exclude FS 
+- specify a FS configuration file to use different threshold and units : 
+
+#FS WARN CRIT 
+/ 400M 300M 
+/home 20 15 
+/var 1G 500M 
+
+./check_disk.pl [-H ] [-w ] [-c ] [-u ] [-p ] [-i ] [-f ] [-h] [-C ] 
+-h | --help : Display this help 
+-w | --warning : % free space to send warning alert (default 10) 
+-c | --critical : % free space to send critical alert (default 5) 
+-H | --host : host you want to check by SSH (default localhost) 
+-u | --user : user for SSH connection (default nagios) 
+-i | --ignore : Filesystem you want to ignore 
+-r /pattern/ : include all filesystems matching this regexp 
+-R /pattern/ : exclude all filesystems matching this regexp 
+-f | --filesystem : filesystems or device you have to check (default all) 
+-C | --conf : specify a configuration file for filesystems threshold definitions 
+-v | --verbose : plugin output contain all FS(default : output shows only warning or critical FS). 
+--srvperf dir : Save datas external files placed on this directory 
+--html : Add in plugin output to improve the Web interface output. 
